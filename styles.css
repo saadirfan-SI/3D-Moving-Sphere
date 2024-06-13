@@ -1,0 +1,47 @@
+* {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    box-sizing: border-box; /* Ensure box model consistency */
+}
+
+body.html {
+    overflow-x: hidden; /* Hide horizontal scrollbar for the body */
+}
+
+.webgl {
+    position: absolute; /* Position the WebGL canvas absolutely */
+    top: 0; /* Align to the top of its containing element */
+    left: 0; /* Align to the left of its containing element */
+    z-index: 1; /* Set z-index to ensure it's behind other elements */
+}
+
+nav {
+    color: white; /* Set text color to white */
+    z-index: 2; /* Set z-index to ensure it's above other elements */
+    position: relative; /* Position the nav relative to its containing element */
+    padding: 4rem 8rem; /* Padding for the nav */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color to white */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+nav ul {
+    list-style: none; /* Remove default list style */
+    display: flex; /* Use flexbox for layout */
+    gap: 4rem; /* Set gap between list items */
+}
+
+.title {
+    color: white; /* Set text color to white */
+    z-index: 2; /* Set z-index to ensure it's above other elements */
+    position: absolute; /* Position the title absolutely */
+    font-size: 3rem; /* Set font size */
+    left: 50%; /* Align to the horizontal center of its containing element */
+    top: 85%; /* Align to the vertical position */
+    transform: translate(-50%, -75%); /* Center the title horizontally and adjust vertically */
+}
